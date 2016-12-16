@@ -1,6 +1,6 @@
-**DevDays**  
-OSGi + Apache Karaf  
-102: Developing apps
+#DevDays
+##OSGi + Apache Karaf  
+###102: Developing apps
 ---
 
 `devdays102-api`  
