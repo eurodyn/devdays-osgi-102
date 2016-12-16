@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.eurodyn.devdays102</groupId>
+    <artifactId>devdays102-parent</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0.0-SNAPSHOT</version>
+
+    <properties>
+        <maven-bundle-plugin.version>3.2.0</maven-bundle-plugin.version>
+        <blueprint-maven-plugin.version>1.5.0</blueprint-maven-plugin.version>
+        <pax.cdi.version>0.12.0</pax.cdi.version>
+        <javax.inject.version>1</javax.inject.version>
+        <javax.ws.rs-api.version>2.0.1</javax.ws.rs-api.version>
+        <javax.transaction.version>1.2</javax.transaction.version>
+    </properties>
+
+    <modules>
+        <module>../devdays102-lib</module>
+        <module>../devdays102-api</module>
+        <module>../devdays102-impl</module>
+        <module>../devdays102-rest</module>
+        <module>../devdays102-ui</module>
+    </modules>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.6.0</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+
+    </build>
+</project>
